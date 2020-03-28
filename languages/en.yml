@@ -4,6 +4,8 @@ index:
     search: 'Search'
     archive: 'Archive'
     category: 'Category'
+    "git recipes": 'Git Recipes'
+    "docker recipes": 'Docker Recipes'
     uncategorized: 'uncategorized'
     tag: 'Tag'
 nav:
