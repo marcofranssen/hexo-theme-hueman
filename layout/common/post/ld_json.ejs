@@ -2,9 +2,21 @@
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<%- url_for(config.url) %>"
+        },
         "author": {
             "@type": "Person",
             "name": "<%= config.author %>"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "<%= config.author %>",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "<%- url_for(config.url + '/images/icons/icon-512x512.png') %>"
+            }
         },
         <% if (post.title) { %>"headline": "<%= post.title %>",<% } %>
         "image": "<%- url_for(config.url + thumbnail(post)) %>",

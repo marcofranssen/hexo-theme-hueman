@@ -18,5 +18,23 @@
         <%- partial('common/footer', null, {cache: !config.relative_link}) %>
     </div>
     <%- partial('common/scripts') %>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Marco Franssen",
+            "url": "https://marcofranssen.nl/about",
+            "sameAs": [
+                "https://www.twitter.com/marcofranssen",
+                "https://www.linkedin.com/in/marcofranssen",
+                "https://www.facebook.com/franssenmarco",
+                "https://www.instagram.com/marco.franssen",
+                "https://stackoverflow.com/users/624395/marco-franssen",
+                "https://www.reddit.com/user/marcofranssen",
+                "https://www.youtube.com/channel/UCVzeKBW8fnCq4c9DXGffRYQ",
+                "https://github.com/marcofranssen"
+            ]
+        }
+    </script>
 </body>
 </html>
